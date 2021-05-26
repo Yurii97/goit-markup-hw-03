@@ -1,0 +1,205 @@
+:root {
+  --primary-tex-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-text-color: #ffffff;
+  --text-color-footer: rgba(238, 57, 57, 0.6);
+  --dark-blac: #000000;
+  --background-another: #2f303a;
+  --button-color: #f5f4fa;
+}
+/* * universal general selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--button-text-color);
+  color: var(--primary-tex-color);
+  font-family: Roboto;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* HEADER */
+/* logo */
+.nav-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--dark-blac);
+  letter-spacing: 0.03em;
+}
+.first-nav-logo {
+  color: var(--accent-color);
+}
+/* nav */
+/* nav title */
+.site-nav a,
+.contact-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+}
+.site-nav a {
+  color: var(--title-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contact-nav a {
+  color: var(--primary-tex-color);
+}
+.contact-nav a:hover,
+.contact-nav a:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero {
+  background-color: var(--background-another);
+}
+.hero-title {
+  color: var(--button-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border-width: 0px;
+  /* ??????? */
+  cursor: pointer;
+}
+/*MAIN */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+}
+/* main  Наши ценности */
+.feature-list .title {
+  color: var(--title-text-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+}
+.feature-list .description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+/* Наша команда */
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+.team-list .position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+}
+/* FOOTER */
+/* adress */
+.adress-footer a {
+  color: var(--primary-tex-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+/* ???????? */
+.adress-footer a:hover,
+.adress-footer a:focus {
+  color: var(--accent-color);
+}
+.adress-footer p {
+  color: var(--button-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.footer {
+  background-color: var(--background-another);
+}
+/* footer logo */
+.footer-logo {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
+}
+.first-footer-logo {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+/* MAIN */
+/* section */
+.price-button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--button-color);
+  border-radius: 4px;
+  border-width: 0px;
+}
+.price-button:hover,
+.price-button:focus {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+}
+.work-list .title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.work-list p {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
