@@ -20,10 +20,13 @@ html {
   margin: 0;
   padding: 0;
 } */
+.section {
+  padding: 94px 0px;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 94px 15px;
+  padding: 0px 15px;
   /* outline: 1px solid green; */
 }
 body {
@@ -67,6 +70,10 @@ img {
   margin: 0;
 }
 /* HEADER */
+/* header border */
+.page-header {
+  border-bottom: 1px solid var(--header-border);
+}
 /* logo */
 .page-header .container {
   padding-top: 0;
@@ -84,10 +91,6 @@ img {
 }
 .first-nav-logo {
   color: var(--accent-color);
-}
-/* header border */
-.page-header .container {
-  border-bottom: 1px solid var(--header-border);
 }
 /* nav */
 .main-nav,
@@ -120,23 +123,22 @@ img {
   color: var(--title-text-color);
 }
 .site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-.contact-nav a {
-  color: var(--primary-tex-color);
-}
+.site-nav a:focus,
+.site-nav .link.current,
 .contact-nav a:hover,
 .contact-nav a:focus {
   color: var(--accent-color);
 }
+
+.contact-nav a {
+  color: var(--primary-tex-color);
+}
+
 /* hero */
 .hero {
   background-color: var(--background-another);
   text-align: center;
+  padding: 200px 0px;
 }
 .hero-title {
   color: var(--button-text-color);
@@ -172,7 +174,6 @@ img {
 }
 .feature-list .item {
   width: 270px;
-  margin-bottom: 94px;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -189,7 +190,10 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
-
+/* Чем мы занимаемся */
+.hidden-padding-top {
+  padding-top: 0;
+}
 /* Наша команда */
 .another-background {
   background-color: var(--button-color);
@@ -204,13 +208,15 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-description {
+  padding: 30px 0px;
+}
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   text-align: center;
 }
 .team-list .position {
@@ -219,7 +225,7 @@ img {
   line-height: 1.187;
   letter-spacing: 0.03em;
   margin-top: 10px;
-  padding-bottom: 30px;
+
   text-align: center;
 }
 /* FOOTER */
@@ -248,12 +254,9 @@ img {
 }
 .footer {
   background-color: var(--background-another);
+  padding: 60px 0px;
 }
 /* footer logo */
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer-logo {
   width: 145px;
   height: 31px;
@@ -303,7 +306,7 @@ img {
   border-radius: 4px;
   border-width: 0px;
   padding: 6px 22px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .price-button:hover,
 .price-button:focus {
